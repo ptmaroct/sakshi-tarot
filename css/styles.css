@@ -4740,3 +4740,15 @@ td:last-child {
 .contact-list li {
 	padding-left: 0;
 }
+.s-intro__content a img {
+	opacity: 0;
+	transform: translateY(150px);
+	transition: opacity 0.9s ease-in-out, transform 0.9s ease-in-out;
+	transition-delay: 1.8s; /* Adjust this delay based on when you want the button to appear relative to the title */
+  }
+  
+  /* State when the animations are triggered */
+  .ss-show .s-intro__content a img {
+	opacity: 1;
+	transform: translateY(0);
+  }
